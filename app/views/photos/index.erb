@@ -4,7 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-
-</body>
+  <body>
+    <%= @photos.each do |photo| %>
+      <td><%= image_tag("#{photo["urls"]["small"]}") %></td>
+      <%= link_to fa_icon('heart'), photos_like_path(id: photo["id"], url: photo["urls"]["small"]), method: :post %> 
+    <% end %>
+  </body>
 </html>
