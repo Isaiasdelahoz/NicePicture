@@ -16,5 +16,7 @@ class PhotosController < ApplicationController
   def like
     photo = Photo.find_or_create_by(unsplash_id: params["id"])
     photo.update(favorite: true, url: params["url"])
+
+    redirect_to photos_favorites_url
   end
 end

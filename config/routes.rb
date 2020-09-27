@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :photos, only: :index
   get 'photos/search/:query', to: 'photos#search'
   get 'photos/favorites', to: 'photos#favorites'
-  post 'photos/like ', to: 'photos#like'
+  post 'photos/like', to: 'photos#like'
 end
