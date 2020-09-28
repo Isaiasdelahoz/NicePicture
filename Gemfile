@@ -33,6 +33,7 @@ gem 'unsplash'
 # assets
 gem 'bootstrap-sass'
 gem 'font-awesome-rails', '4.7.0.5'
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

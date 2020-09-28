@@ -6,7 +6,7 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @photos = Unsplash::Api.search(params["query"]).parsed_response["results"]
+    @photos = Unsplash::Api.search(params["search"]).parsed_response["results"]
   end
 
   def favorites

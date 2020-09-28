@@ -2,11 +2,11 @@ module Unsplash
   class Api
     class << self
       def search(query)
-        Unsplash::Photo.connection.get("/search/photos?page=1&query=#{query}&per_page=5")
+        Unsplash::Photo.connection.get("/search/photos?page=1&query=#{query}&per_page=6")
       end
 
       def photos
-        Unsplash::Photo.connection.get("/photos?per_page=5")
+        Unsplash::Photo.connection.get("/photos?per_page=6")
       end
 
       def favorites(username)
